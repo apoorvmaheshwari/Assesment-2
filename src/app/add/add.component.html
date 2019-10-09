@@ -1,0 +1,40 @@
+<div class="container">
+    <form (ngSubmit)="createDetails()" class="col-md-6">
+        <div class="form-group">
+            <label for="my-input">Name</label>
+            <input placeholder="Enter Full Name of Student" class="form-control" type="text" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Date</label>
+            <input placeholder="Enter Date of Birth formar DDMMYYYY" class="form-control" type="date" name="dob" [(ngModel)]="dob">
+        </div>
+        
+        <div class="form-group">
+            <label for="my-input">Home Address</label>
+            <input placeholder="Enter full address" class="form-control" type="text" name="homeaddress" [(ngModel)]="homeaddress">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Phone Number</label>
+            <input placeholder="Enter phone number" class="form-control" type="number" name="phone" [(ngModel)]="phone">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Degree</label>
+            <input placeholder="Enter Highest Education Qualification" class="form-control" type="text" name="degree" [(ngModel)]="degree">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Marks</label>
+            <input placeholder="Enter Marks Scored in Highest Degree Qualification" class="form-control" type="number" name="marks" [(ngModel)]="marks">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Stream</label>
+            <input placeholder="Enter Stream" class="form-control" type="text" name="stream" [(ngModel)]="stream">
+        </div>
+        <div class="form-group">
+            <label for="my-input">College</label>
+            <input placeholder="Enter College Name" class="form-control" type="text" name="college" [(ngModel)]="college">
+        </div>
+
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>

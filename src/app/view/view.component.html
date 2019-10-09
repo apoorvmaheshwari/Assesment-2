@@ -1,0 +1,23 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date Of Birth</th>
+        <th scope="col">Home Address</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let details of svc.detail">
+            <td>{{details.name}}</td>
+            <td>{{details.dob}}</td>
+            <td>{{details.homeaddress}}</td>
+            <td>{{details.phone}}</td>
+            <td><a routerLink="/edit/{{details.id}}" class="btn btn-dark">Edit</a></td>
+          </tr>
+      
+    </tbody>
+  </table>
+  
+  
