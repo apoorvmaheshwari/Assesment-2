@@ -6,6 +6,7 @@
         <th scope="col">Date Of Birth</th>
         <th scope="col">Home Address</th>
         <th scope="col">Phone</th>
+        <th scope="col">Edit Options</th>
       </tr>
     </thead>
     <tbody>
@@ -14,7 +15,8 @@
             <td>{{details.dob}}</td>
             <td>{{details.homeaddress}}</td>
             <td>{{details.phone}}</td>
-            <td><a routerLink="/edit/{{details.id}}" class="btn btn-dark">Edit</a></td>
+            <td><a routerLink="/edit/{{details.id}}" class="btn btn-dark">Edit Personal</a></td>
+            <td><a routerLink="/edit/{{details.id}}" class="btn btn-dark">Edit Educational Details</a></td>
           </tr>
       
     </tbody>
